@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="1000dp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/staffNameTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?textAppearanceBody2"
+		tools:text="Staff Name : name" />
+
+	<TextView
+		android:id="@+id/timeTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?textAppearanceBody2"
+		tools:text="Time : dd/MM/yyyy HH:mm:ss" />
+
+	<TextView
+		android:id="@+id/tableTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/space_larger"
+		android:textAppearance="?textAppearanceHeadline6"
+		tools:text="Table: Counter" />
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+	<LinearLayout
+		android:id="@+id/orderBillItemLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/space_larger"
+		android:layout_marginBottom="@dimen/space_larger"
+		android:orientation="vertical"
+		tools:background="@color/gray300"
+		tools:layout_height="100dp" />
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+</LinearLayout>

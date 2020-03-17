@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="TextAppearance.Printer.Headline1" parent="TextAppearance.MaterialComponents.Headline1" />
+
+	<style name="TextAppearance.Printer.Headline2" parent="TextAppearance.MaterialComponents.Headline2"/>
+
+	<style name="TextAppearance.Printer.Headline3" parent="TextAppearance.MaterialComponents.Headline3"/>
+
+	<style name="TextAppearance.Printer.Headline4" parent="TextAppearance.MaterialComponents.Headline4"/>
+
+	<style name="TextAppearance.Printer.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+		<item name="android:textSize">@dimen/printer_text_display</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+		<item name="android:textSize">@dimen/printer_text_title</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+		<item name="android:textSize">@dimen/printer_text_subtitle</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+		<item name="android:textSize">@dimen/printer_text_headline</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Body1" parent="TextAppearance.MaterialComponents.Body1">
+		<item name="android:textSize">@dimen/printer_text_normal</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Body2" parent="TextAppearance.MaterialComponents.Body2">
+		<item name="android:textSize">@dimen/printer_text_small</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Large.Headline1" parent="TextAppearance.MaterialComponents.Headline1" />
+
+	<style name="TextAppearance.Printer.Large.Headline2" parent="TextAppearance.MaterialComponents.Headline2"/>
+
+	<style name="TextAppearance.Printer.Large.Headline3" parent="TextAppearance.MaterialComponents.Headline3"/>
+
+	<style name="TextAppearance.Printer.Large.Headline4" parent="TextAppearance.MaterialComponents.Headline4"/>
+
+	<style name="TextAppearance.Printer.Large.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+		<item name="android:textSize">@dimen/printer_text_large_display</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Large.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+		<item name="android:textSize">@dimen/printer_text_large_title</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Large.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+		<item name="android:textSize">@dimen/printer_text_large_subtitle</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Large.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+		<item name="android:textSize">@dimen/printer_text_large_headline</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Large.Body1" parent="TextAppearance.MaterialComponents.Body1">
+		<item name="android:textSize">@dimen/printer_text_large_normal</item>
+	</style>
+
+	<style name="TextAppearance.Printer.Large.Body2" parent="TextAppearance.MaterialComponents.Body2">
+		<item name="android:textSize">@dimen/printer_text_large_small</item>
+	</style>
+</resources>

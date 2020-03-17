@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Printer Test</string>
+
+    <string name="printer_receipt_welcome">Welcome</string>
+    <string name="printer_receipt_copyright">Powered by Wongnai POS</string>
+
+    <string name="printer_receipt_title">receipt</string>
+
+    <string name="printer_staff_title">Staff : %1$s</string>
+    <string name="printer_guests_title">Guests : %1$s</string>
+    <string name="printer_receipt_id_title">ID : %1$s</string>
+    <string name="printer_date_title">Date : %1$s</string>
+    <string name="printer_time_title">Time : %1$s</string>
+    <string name="printer_item_title">Item : %1$s</string>
+    <string name="printer_table_title">Table : %1$s</string>
+    <string name="printer_total_label">Total :</string>
+    <string name="printer_receipt_type_recipt">Receipt</string>
+</resources>

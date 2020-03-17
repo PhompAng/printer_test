@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="space_smaller">2dp</dimen>
+	<dimen name="space_small">4dp</dimen>
+	<dimen name="space_small_6dp">6dp</dimen>
+	<dimen name="space_normal">8dp</dimen>
+	<dimen name="space_normal_12dp">12dp</dimen>
+	<dimen name="space_large">16dp</dimen>
+	<dimen name="space_larger">24dp</dimen>
+	<dimen name="space_extra_large">40dp</dimen>
+
+	<dimen name="printer_text_display">70sp</dimen>
+	<dimen name="printer_text_title">60sp</dimen>
+	<dimen name="printer_text_subtitle">55sp</dimen>
+	<dimen name="printer_text_headline">55sp</dimen>
+	<dimen name="printer_text_normal">50sp</dimen>
+	<dimen name="printer_text_small">46sp</dimen>
+
+	<dimen name="printer_text_large_display">80sp</dimen>
+	<dimen name="printer_text_large_title">70sp</dimen>
+	<dimen name="printer_text_large_subtitle">65sp</dimen>
+	<dimen name="printer_text_large_headline">65sp</dimen>
+	<dimen name="printer_text_large_normal">60sp</dimen>
+	<dimen name="printer_text_large_small">56sp</dimen>
+</resources>

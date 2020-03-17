@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:padding="@dimen/space_normal_12dp">
+
+	<TextView
+		android:id="@+id/amountTextView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:textAppearance="?textAppearanceBody2"
+		tools:text="1" />
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="5"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/nameTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			tools:text="Test Order for Printer 01" />
+
+		<LinearLayout
+			android:id="@+id/receiptOrderOptionLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			tools:background="@color/gray300"
+			tools:layout_height="100dp" />
+
+		<TextView
+			android:id="@+id/billItemNoteTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			tools:text="# note item" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/priceTextView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="2"
+		android:gravity="end"
+		android:textAppearance="?textAppearanceBody2"
+		tools:text="1.00" />
+
+</LinearLayout>

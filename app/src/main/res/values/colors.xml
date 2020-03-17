@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#232729</color>
+    <color name="black_transparent">#61232729</color>
+    <color name="gray700">#76797A</color>
+    <color name="gray500">#999C9E</color>
+    <color name="gray300">#DCDFE0</color>
+    <color name="gray200">#EDEFF0</color>
+    <color name="gray100">#F3F4F5</color>
+    <color name="gray50">#FAFAFA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#E21A00</color>
+    <color name="green">#0AB356</color>
+
+    <color name="wongnai_blue_light2">#D9F2FF</color>
+    <color name="wongnai_blue_light1">#4DC3FF</color>
+    <color name="wongnai_blue">#0070A8</color>
+    <color name="wongnai_blue1">#004E75</color>
+    <color name="wongnai_blue2">#002C42</color>
+
+    <color name="wongnai_orange_light2">#FFEDE5</color>
+    <color name="wongnai_orange_light1">#FF8945</color>
+    <color name="wongnai_orange">#FF672B</color>
+    <color name="wongnai_orange1">#CC3A00</color>
+    <color name="wongnai_orange2">#992B00</color>
+</resources>

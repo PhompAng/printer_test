@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="1000dp"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/receiptTitleTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?textAppearanceSubtitle1"
+		tools:text="Title" />
+
+	<TextView
+		android:id="@+id/receiptSubTitleTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?textAppearanceBody1"
+		tools:text="subtitle" />
+
+	<TextView
+		android:id="@+id/receiptTelTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?textAppearanceBody1"
+		tools:text="Tel : 000-000-0000 " />
+
+	<TextView
+		android:id="@+id/receiptTypeTextView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/space_extra_large"
+		android:text="@string/printer_receipt_type_recipt"
+		android:textAppearance="?textAppearanceHeadline6" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/space_larger"
+		android:layout_marginBottom="@dimen/space_larger"
+		android:text="@string/printer_receipt_welcome"
+		android:textAppearance="?textAppearanceBody1" />
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/space_larger">
+
+		<TextView
+			android:id="@+id/tableTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="Table : counter" />
+
+		<TextView
+			android:id="@+id/staffNameTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/tableTextView"
+			tools:text="Staff : name" />
+
+		<TextView
+			android:id="@+id/guestsTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/staffNameTextView"
+			tools:text="Guests : 1" />
+
+		<TextView
+			android:id="@+id/receiptIDTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintBaseline_toBaselineOf="@+id/guestsTextView"
+			app:layout_constraintEnd_toEndOf="parent"
+			tools:text="ID : XXXXX" />
+
+		<TextView
+			android:id="@+id/dateTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/guestsTextView"
+			tools:text="Date : " />
+
+		<TextView
+			android:id="@+id/timeTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintBaseline_toBaselineOf="@+id/dateTextView"
+			app:layout_constraintEnd_toEndOf="parent"
+			tools:text="Time : xx:xx" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+	<LinearLayout
+		android:id="@+id/receiptBillItemLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/space_larger"
+		android:layout_marginBottom="@dimen/space_larger"
+		android:orientation="vertical" />
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/space_larger">
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/dividerGuideline"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:orientation="vertical"
+			app:layout_constraintGuide_percent="0.7" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:id="@+id/dividerGuideline2"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:orientation="vertical"
+			app:layout_constraintGuide_percent="0.45" />
+
+		<TextView
+			android:id="@+id/receiptTotalBillItemTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="Item: 19" />
+
+		<LinearLayout
+			android:id="@+id/billItemsLayout"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/receiptTotalBillItemTextView"
+			tools:background="@color/gray300"
+			tools:layout_height="100dp" />
+
+		<include
+			android:id="@+id/billItemsDivider"
+			layout="@layout/view_item_horizontal_dotted_line"
+			android:layout_width="0dp"
+			android:layout_height="5dp"
+			android:layout_marginTop="@dimen/space_larger"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/dividerGuideline2"
+			app:layout_constraintTop_toBottomOf="@+id/billItemsLayout" />
+
+		<TextView
+			android:id="@+id/totalLabelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/space_larger"
+			android:text="@string/printer_total_label"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintEnd_toStartOf="@+id/dividerGuideline"
+			app:layout_constraintTop_toBottomOf="@+id/billItemsDivider" />
+
+		<TextView
+			android:id="@+id/receiptTotalPriceTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:textAppearance="?textAppearanceBody2"
+			app:layout_constraintBaseline_toBaselineOf="@+id/totalLabelTextView"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/dividerGuideline"
+			tools:text="xx.xx" />
+
+		<include
+			android:id="@+id/totalDivider"
+			layout="@layout/view_item_horizontal_dotted_line"
+			android:layout_width="0dp"
+			android:layout_height="5dp"
+			android:layout_marginTop="@dimen/space_larger"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/billItemsDivider"
+			app:layout_constraintTop_toBottomOf="@+id/totalLabelTextView" />
+
+		<include
+			layout="@layout/view_item_horizontal_dotted_line"
+			android:layout_width="0dp"
+			android:layout_height="5dp"
+			android:layout_marginTop="5dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/totalDivider"
+			app:layout_constraintTop_toBottomOf="@+id/totalDivider" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+	<LinearLayout
+		android:id="@+id/receiptPaymentLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/space_larger"
+		android:layout_marginBottom="@dimen/space_larger"
+		android:orientation="vertical"
+		tools:background="@color/gray300"
+		tools:layout_height="100dp" />
+
+	<include layout="@layout/view_item_horizontal_dotted_line" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/space_larger"
+		android:layout_marginBottom="@dimen/space_extra_large"
+		android:text="@string/printer_receipt_copyright"
+		android:textAppearance="?textAppearanceBody2" />
+
+</LinearLayout>
